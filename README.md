@@ -1,7 +1,8 @@
 ember-data-lawnchair is an adapter for ember-data for lawnchair.
 
-```javascript
+The following demonstrates its usage:
 
+```javascript
 var App = Ember.Application.create({
     Router: Ember.Router.extend({
 	root: Ember.Route.extend({
@@ -47,10 +48,11 @@ App.ApplicationView = Ember.View.extend({
 App.MainController = Ember.Controller.extend();
 App.MainView = Ember.View.extend({
     templateName: 'main'
-});```
+});
+```
+
 
 ```html
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -87,4 +89,5 @@ App.MainView = Ember.View.extend({
   <body>
 
   </body>
-</html>```
+</html>
+```
