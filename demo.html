@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    
+    <script type="text/x-handlebars" data-template-name="application">
+      {{outlet content}}
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="main">
+      <a href="#" {{action addItem }}>Add Item</a>
+      <ul>
+	{{#each content}}
+	<li>{{view Ember.TextField valueBinding="name"}}
+	{{#if isDirty}}
+	<a href="#" {{action saveItem this}}>Save</a>
+	{{/if}}
+	<a href="#" {{action deleteItem this}}>Delete</a>
+	</li>
+	{{/each}}
+      </ul>
+    </script>
+
+    <script type="text/javascript" src="lib/vendor/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="lib/vendor/handlebars-1.0.rc.1.js"></script>
+    <script type="text/javascript" src="lib/vendor/ember.js"></script>
+    <script type="text/javascript" src="lib/vendor/ember-data.js"></script>
+    <script type="text/javascript" src="lib/vendor/lawnchair.js"></script>
+    <script type="text/javascript" src="lib/vendor/lawnchair-adapter-indexed-db-0.6.1.js"></script>
+    <script type="text/javascript" src="lib/vendor/uuid.js"></script>
+    <script type="text/javascript" src="lib/ember-data-lawnchair.js"></script>
+    <script type="text/javascript" src="demo.js"></script>
+  </head>
+  <body>
+
+  </body>
+</html>
