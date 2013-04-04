@@ -1,5 +1,8 @@
 ember-data-lawnchair is an adapter for ember-data for lawnchair.
 
+THIS EXAMPLE IS OUTDATED FOR V2 EMBER ROUTER BUT WILL SUPPORT EMBER-DATA v11
+
+
 The following demonstrates its usage:
 
 ```javascript
